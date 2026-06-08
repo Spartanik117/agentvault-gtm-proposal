@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentVault GTM Proposal - Business Development Strategy Report</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    @page {
+      size: A4;
+      margin: 20mm 15mm 20mm 15mm;
+    }
+
+    /* Base Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #374151;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 10pt;
+      line-height: 1.5;
+      padding: 0;
+    }
+
+    .page {
+      width: 100%;
+      position: relative;
+      page-break-after: always;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Header Styling */
+    .report-header {
+      border-bottom: 2px solid #111827;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .report-title-block h1 {
+      font-family: 'Georgia', serif;
+      font-size: 22pt;
+      font-weight: bold;
+      color: #111827;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .report-title-block p {
+      font-size: 9.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b7280;
+      font-weight: 600;
+    }
+
+    .meta-block {
+      text-align: right;
+      font-size: 8.5pt;
+      color: #4b5563;
+      line-height: 1.4;
+    }
+
+    .meta-block strong {
+      color: #111827;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section-title {
+      font-family: 'Georgia', serif;
+      font-size: 13pt;
+      font-weight: bold;
+      color: #111827;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .doc-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 14px;
+      background-color: #f9fafb;
+    }
+
+    .doc-card h3 {
+      font-family: 'Georgia', serif;
+      font-size: 11pt;
+      font-weight: bold;
+      color: #111827;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .bullet-point {
+      margin-left: 14px;
+      margin-bottom: 6px;
+      font-size: 9pt;
+      color: #4b5563;
+    }
+
+    .bullet-point strong {
+      color: #1f2937;
+    }
+
+    .sub-title {
+      font-size: 8.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #1f2937;
+      margin-top: 10px;
+      margin-bottom: 4px;
+    }
+
+    .body-text {
+      font-size: 9pt;
+      color: #4b5563;
+      margin-bottom: 8px;
+    }
+
+    /* Outreach Layout */
+    .outreach-box {
+      background-color: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-left: 3px solid #111827;
+      border-radius: 4px;
+      padding: 12px 14px;
+      font-family: monospace;
+      font-size: 8.5pt;
+      white-space: pre-wrap;
+      color: #1f2937;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+    }
+
+    th {
+      background-color: #f3f4f6;
+      font-family: 'Georgia', serif;
+      font-size: 9.5pt;
+      font-weight: bold;
+      color: #111827;
+      text-align: left;
+      padding: 8px 10px;
+      border: 1px solid #d1d5db;
+    }
+
+    td {
+      font-size: 9pt;
+      color: #4b5563;
+      padding: 10px;
+      border: 1px solid #e5e7eb;
+      vertical-align: top;
+      line-height: 1.4;
+    }
+
+    td strong {
+      color: #1f2937;
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 6px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+
+    /* Print settings optimization */
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= PAGE 1 ================= -->
+  <div class="page">
+    <div class="report-header">
+      <div class="report-title-block">
+        <h1>AgentVault GTM Proposal</h1>
+        <p>Strategic Go-To-Market & Business Development Analysis</p>
+      </div>
+      <div class="meta-block">
+        Prepared for: <strong>Primetrade.ai Hiring Team</strong><br>
+        Candidate: <strong>Nik</strong><br>
+        Role: <strong>Business Development</strong>
+      </div>
+    </div>
+
+    <!-- Section 1: User Segments -->
+    <div class="section">
+      <h2 class="section-title">1. Target User Segments</h2>
+      <div class="grid-2">
+        
+        <!-- Segment 1 -->
+        <div class="doc-card" style="border-top: 3px solid #8b5cf6;">
+          <h3>Segment 1: DeFi Yield Farmers & LPs</h3>
+          
+          <div class="sub-title">Target Profiles & Sub-Segments</div>
+          <p class="body-text">
+            <strong>Yield Arbitrageurs:</strong> LPs deploying assets across Curve, Uniswap V3/V4, and Balancer pools. They actively rebalance to capture fee spikes.<br>
+            <strong>Momentum DEX Traders:</strong> Swing traders utilizing yield-bearing tokens (e.g. Pendle) requiring automated execution templates for stop-losses or dips.
+          </p>
+          
+          <div class="sub-title">Pain Point Solved by AgentVault</div>
+          <p class="body-text">
+            Yield optimization is gas-intensive and slow to execute manually. LPs suffer from impermanent loss, frontrunning (MEV), and yield slippage. AgentVault enables them to build 24/7 autonomous agents via natural language prompts to rebalance and hedge pools instantly.
+          </p>
+          
+          <div class="sub-title">Primary Channels (Online/Offline)</div>
+          <ul class="section-list">
+            <li class="bullet-point"><strong>Online:</strong> Gated Discord server channels of Uniswap/Morpho; Warpcast (Farcaster) /defi hub; Crypto Twitter search trackers.</li>
+            <li class="bullet-point"><strong>Offline:</strong> Hacker lounges and technical workshops at global conferences (ETHDenver, EthCC, Devcon) and Web3 dev groups.</li>
+          </ul>
+        </div>
+
+        <!-- Segment 2 -->
+        <div class="doc-card" style="border-top: 3px solid #06b6d4;">
+          <h3>Segment 2: University Blockchain Clubs</h3>
+          
+          <div class="sub-title">Target Profiles & Sub-Segments</div>
+          <p class="body-text">
+            <strong>DAO Governance Leads:</strong> Active student delegates managing and directing proposal voting power for partner DeFi protocols.<br>
+            <strong>Aspiring Quant-dev Builders:</strong> Tech-forward students seeking practical experience developing trading algorithms without institutional overhead.
+          </p>
+          
+          <div class="sub-title">Pain Point Solved by AgentVault</div>
+          <p class="body-text">
+            Students face technical smart contract barriers and lack capital to deploy live trading bots. Lecture schedules prevent 24/7 market monitoring. AgentVault's no-code builder lets clubs collaboratively design, test, and run agents on testnets safely.
+          </p>
+          
+          <div class="sub-title">Primary Channels (Online/Offline)</div>
+          <ul class="section-list">
+            <li class="bullet-point"><strong>Online:</strong> Combined Discord/Telegram hubs of elite groups (Blockchain at Berkeley, Stanford Blockchain, Michigan Blockchain, Franklin DAO).</li>
+            <li class="bullet-point"><strong>Offline:</strong> Club general meetings, intercollegiate hackathons, regional university summits, and college campus workshops.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Section 2: Outreach Examples Header -->
+    <div class="section">
+      <h2 class="section-title">2. Platform-Tailored Cold Outreach Examples</h2>
+      
+      <div style="margin-bottom: 12px;">
+        <h4 style="font-size: 9.5pt; font-weight: bold; margin-bottom: 4px; color: #111827;">Option A: Discord Direct Message (Yield Farmer - Performance Hook)</h4>
+        <div class="outreach-box">
+Hey Alex! Saw your post in the Uniswap yield optimization Discord about slippage on your yield trades. Impressive LP strategy, but manual rebalancing must eat into your APY. Have you looked into setting up an autonomous agent for it?
+
+We're building AgentVault—a no-code tool that lets you launch 24/7 trading agents to auto-execute strategies like stop-losses or yield routing. Would love to get you early access to our MVP to automate this. Let me know if you're down to test it!
+
+- Nik
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>AgentVault BD Proposal • Primetrade.ai</span>
+      <span>Page 1 of 2</span>
+    </div>
+  </div>
+
+  <!-- ================= PAGE 2 ================= -->
+  <div class="page" style="padding-top: 10px;">
+    <!-- Continuation of Section 2: Outreach Examples -->
+    <div class="section">
+      <div style="margin-bottom: 12px;">
+        <h4 style="font-size: 9.5pt; font-weight: bold; margin-bottom: 4px; color: #111827;">Option B: Twitter (X) Direct Message (Influencer - Beta Scarcity Hook)</h4>
+        <div class="outreach-box">
+Yo Alex, love your alpha on Uniswap yield optimization.
+
+I'm building AgentVault, a no-code platform where you can launch autonomous trading agents in minutes (e.g., auto-buy dips, route yield). We're capping our beta at 50 users.
+
+Since you're deep in the weeds, would love your feedback on the MVP. Got a slot open for you if interested? 🚀
+        </div>
+      </div>
+
+      <div>
+        <h4 style="font-size: 9.5pt; font-weight: bold; margin-bottom: 4px; color: #111827;">Option C: LinkedIn InMail (University Club Lead - Academic Partner Hook)</h4>
+        <div class="outreach-box">
+Hi Alex,
+
+I came across your profile and noticed your work leading Uniswap yield optimization.
+
+I'm reaching out from AgentVault. We've built a no-code platform that enables retail and student investors to build and deploy autonomous, 24/7 crypto trading agents.
+
+Given your interest in Web3 education and hands-on tooling, we'd love to partner with you to offer your members early access to our beta. Would you be open to a brief chat this week?
+
+Best,
+Nik
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: GTM Campaigns -->
+    <div class="section">
+      <h2 class="section-title">3. Low-Cost Go-to-Market Campaigns</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 25%;">Campaign & Metrics</th>
+            <th style="width: 50%;">Execution Playbook</th>
+            <th style="width: 25%;">Milestone KPIs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>1. Campus Yield Copilot</strong><br><br>
+              <span style="font-size: 7.5pt; background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-weight: bold;">COST: $250 USDC</span><br>
+              <span style="font-size: 7.5pt; background: #fef3c7; color: #d97706; padding: 2px 6px; border-radius: 4px; font-weight: bold; display:inline-block; margin-top:4px;">SPEED: 1-2 WEEKS</span>
+            </td>
+            <td>
+              Partner with executive boards of 5 elite university blockchain clubs (e.g. Berkeley, Stanford, Michigan). Host a virtual "DeFi Agent Build Night" showing students how to launch agents on the MVP. Run a 10-day <em>No-Code Alpha Competition</em> with a $250 USDC prize pool, providing clubs with custom access invite codes (e.g., `STANFORD-VAULT`).
+            </td>
+            <td>
+              • 120+ signups<br>
+              • 45+ active agents<br>
+              • 8+ feedback logs<br>
+              • 15+ core users
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>2. "Prompt-to-Agent" CT</strong><br><br>
+              <span style="font-size: 7.5pt; background: #d1fae5; color: #065f46; padding: 2px 6px; border-radius: 4px; font-weight: bold;">COST: $0 (FREE)</span><br>
+              <span style="font-size: 7.5pt; background: #fef3c7; color: #d97706; padding: 2px 6px; border-radius: 4px; font-weight: bold; display:inline-block; margin-top:4px;">SPEED: IMMEDIATE</span>
+            </td>
+            <td>
+              Monitor Crypto Twitter for active debates on gas hikes, DEX slippage, or liquidations. Reply to users experiencing pain points with a 30-second screen-share showing their exact strategy typed in plain English and deployed instantly as an agent on AgentVault, offering them direct beta access.
+            </td>
+            <td>
+              • 25k+ video views<br>
+              • 50k+ impressions<br>
+              • 180+ waitlist joins<br>
+              • 20+ beta keys
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>3. Alpha Vault Guild</strong><br><br>
+              <span style="font-size: 7.5pt; background: #d1fae5; color: #065f46; padding: 2px 6px; border-radius: 4px; font-weight: bold;">COST: $0 (FREE)</span><br>
+              <span style="font-size: 7.5pt; background: #fef3c7; color: #d97706; padding: 2px 6px; border-radius: 4px; font-weight: bold; display:inline-block; margin-top:4px;">SPEED: 1 WEEK</span>
+            </td>
+            <td>
+              Recruit 15 active DeFi power-traders or micro-influencers (1k–10k followers) across Twitter and Farcaster. Provide them with "Alpha Founder" Discord roles, lifetime premium subscriptions, and direct communication lines to core engineers in exchange for sharing performance screenshots weekly.
+            </td>
+            <td>
+              • 15 ambassadors<br>
+              • 20+ weekly posts<br>
+              • 150+ direct joins<br>
+              • 50+ active guild
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="page-footer">
+      <span>AgentVault BD Proposal • Primetrade.ai</span>
+      <span>Page 2 of 2</span>
+    </div>
+  </div>
+
+</body>
+</html>
